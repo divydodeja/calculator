@@ -6,27 +6,27 @@ let fixedToExp = false;
 let inv_flag = false;
 let hyp_flag = false;
 
-let input = document.querySelector(".input") as HTMLInputElement;
-let btns = document.querySelectorAll(".calcbtn");
-let equalBtn = document.querySelector("#equal") as HTMLButtonElement;
-let degreeBtn = document.querySelector("#degree") as HTMLButtonElement;
-let fixToExpBtn = document.querySelector("#fixExp") as HTMLButtonElement;
-let change2Btn = document.querySelectorAll(".change2");
-let change_2 = document.getElementById("change_2") as HTMLButtonElement;
-let trignoBtn = document.querySelector("#trignoBtn") as HTMLButtonElement;
-let funcBtn = document.querySelector("#funcBtn") as HTMLButtonElement;
-let trignodrop = document.getElementById("trigno") as HTMLDivElement;
-let funcdrop = document.getElementById("func") as HTMLDivElement;
-let inverse = document.querySelector(".inverse") as HTMLButtonElement;
-let hyperbolic = document.querySelector(".hyperbolic") as HTMLButtonElement;
-let mcBtn = document.getElementById("MC") as HTMLButtonElement;
-let mrBtn = document.getElementById("MR") as HTMLButtonElement;
-let cosBtn = document.getElementById("cos") as HTMLButtonElement;
-let tanBtn = document.getElementById("tan") as HTMLButtonElement;
-let secBtn = document.getElementById("sec") as HTMLButtonElement;
-let sinBtn = document.getElementById("sin") as HTMLButtonElement;
-let cscBtn = document.getElementById("csc") as HTMLButtonElement;
-let cotBtn = document.getElementById("cot") as HTMLButtonElement;
+// let input = document.querySelector(".input") as HTMLInputElement;
+// let btns = document.querySelectorAll(".calcbtn");
+// let equalBtn = document.querySelector("#equal") as HTMLButtonElement;
+// let degreeBtn = document.querySelector("#degree") as HTMLButtonElement;
+// let fixToExpBtn = document.querySelector("#fixExp") as HTMLButtonElement;
+// let change2Btn = document.querySelectorAll(".change2");
+// let change_2 = document.getElementById("change_2") as HTMLButtonElement;
+// let trignoBtn = document.querySelector("#trignoBtn") as HTMLButtonElement;
+// let funcBtn = document.querySelector("#funcBtn") as HTMLButtonElement;
+// let trignodrop = document.getElementById("trigno") as HTMLDivElement;
+// let funcdrop = document.getElementById("func") as HTMLDivElement;
+// let inverse = document.querySelector(".inverse") as HTMLButtonElement;
+// let hyperbolic = document.querySelector(".hyperbolic") as HTMLButtonElement;
+// let mcBtn = document.getElementById("MC") as HTMLButtonElement;
+// let mrBtn = document.getElementById("MR") as HTMLButtonElement;
+// let cosBtn = document.getElementById("cos") as HTMLButtonElement;
+// let tanBtn = document.getElementById("tan") as HTMLButtonElement;
+// let secBtn = document.getElementById("sec") as HTMLButtonElement;
+// let sinBtn = document.getElementById("sin") as HTMLButtonElement;
+// let cscBtn = document.getElementById("csc") as HTMLButtonElement;
+// let cotBtn = document.getElementById("cot") as HTMLButtonElement;
 
 let operArr: string[] = [];
 let exArr: string[] = [];
@@ -745,6 +745,8 @@ trignoBtn.addEventListener("click", () => {
 
 // evaluating expression array
 equalBtn.addEventListener("click", () => {
+  console.log(operArr);
+  console.log(exArr);
   if (exArr.includes("→dms")) {
     input.value = exArr[exArr.length - 1];
     operArr.splice(0, operArr.length);
